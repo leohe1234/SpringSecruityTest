@@ -1,0 +1,31 @@
+server:
+  port: 9000
+  
+spring:
+  application:
+    name: test1
+  datasource:
+    url:  jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    
+    
+token: 
+    header: token 
+    secret: test
+    expiration: 604800
+    
+logging:
+  level:
+    org.hibernate: info
+
+  
+ 
+ 
